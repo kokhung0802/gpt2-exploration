@@ -1,12 +1,14 @@
 # GPT-2 for Story Generation
 
 ## Intro
-GPT-2 is a language model that predicts the next word in a sentence using the information from previous words. GPT-2 is created by OpenAI in February 2019 and is able to perform a wide variety of NLP tasks such as question answering, text generation and language translation.
+GPT-2 is a language model that predicts the next word in a sentence using the information from previous words. GPT-2 is created by OpenAI in February 2019 and is able to perform a wide variety of NLP tasks such as text generation.
+
+Refer [here](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) to learn more about GPT-2.
 
 ## Limitation of previous NLP models
 Previous NLP models such as RNN or GRU are trained in a supervised manner to perform only one task with datasets which belong to the same domain. However, the performance of these kind of model decreases when there is a slight change in the distribution of test data compared to data the model is trained on. 
 
-This is significant to models deployed in a real environment setting:
+This is significant to models deployed in a real environment setting because:
 1. Inputs to the model comes in different forms.  
 2. The performance of the model decreases when it is asked to perform a task that it is not trained to do. 
 3. Researchers need to go through the laborious task of labelling the dataset to train the model to perform a different task.
@@ -17,6 +19,8 @@ GPT-2 is a general purpose learner which can perform many down-stream tasks with
 -------------------------------------------------------
 
 ## Story Generation
+
+A flask API has been created to allow user to experiment and play around with GPT-2 easily.
 
 **Run locally**
 
